@@ -100,7 +100,7 @@ def find_items():
                 c_commod.append(ch.text)
 
         # Output row
-        print(",".join(c_commod))
+        print("|".join(c_commod))
 
 if __name__ == "__main__":
     print_header()
