@@ -21,9 +21,6 @@ headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleW
 
 
 def _get_soup(url=url, headers=headers):
-    """Receives ip address string, use IPINFO_URL to get geo data,
-       parse the json response returning the country code of the IP"""
-
     with requests.Session() as s:
         resp = s.get(url, headers=headers)
 
